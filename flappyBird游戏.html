@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        canvas {
+            /* transform: translateX(100px); */
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas>     
+    </canvas>
+    <script type="text/javascript" src="./js/Game.js"></script>
+    <script type="text/javascript" src="./js/Background.js"></script>
+    <script type="text/javascript" src="./js/Land.js"></script>
+    <script type="text/javascript" src="./js/Pipe.js"></script>
+    <script type="text/javascript" src="./js/Bird.js"></script>
+    <script>
+        let game = new Game({
+            "tag": "canvas",
+            "Rjsonurl": "R/R.json"
+        });
+        new Background();
+    </script>
+</body>
+
+</html>
